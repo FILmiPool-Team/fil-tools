@@ -10,5 +10,6 @@ steps:
 ``` 
 $ chmod +x mpool-keeper.py
 $ ./mpool-keeper.py > mpool-keeper.log  2>&1 &
+$ ./pledge-keeper.py > pledge-keeper.log  2>&1 &
 ```
 
