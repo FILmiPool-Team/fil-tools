@@ -77,7 +77,7 @@ def loop():
             ts = now.strftime("%Y/%m/%d-%H:%M:%S")
             print("dump msg_dict:")
             for key in msg_dict:
-                print(ts + ' ' + msg_dict[key].from_addr + ' ' + str(msg_dict[key].nonce) + ' ' + str(msg_dict[key].view_time))
+                print(ts + ' ' + msg_dict[key].from_addr + ' ' + str(msg_dict[key].nonce) + ' ' + key)
 
             # deal with blocked msgs
             curr_time = int(round(time.time()))
@@ -111,7 +111,6 @@ def loop():
 
         # sleep
         print("sleep 20 seconds\n")
-        # sys.stdout.flush()
         time.sleep(20)
 
 
